@@ -1,0 +1,267 @@
+body {
+  background-image: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+.container {
+  margin-left: 83px;
+  margin-right: auto;
+  width: 960px;
+}
+
+form {
+  padding-top: 50px;
+  margin: 0px;
+}
+
+#search-text-input {
+  padding: 10px;
+  margin-right: 10px;
+  padding: 10px;
+}
+
+#search-Button,
+#location-search {
+  background-image: radial-gradient(73% 147%, #eadfdf 59%, #ece2df 100%),
+    radial-gradient(
+      91% 146%,
+      rgba(255, 255, 255, 0.5) 47%,
+      rgba(0, 0, 0, 0.5) 100%
+    );
+  background-blend-mode: screen;
+  border-color: #175053;
+}
+
+#search-text-input,
+#search-Button,
+#location-search {
+  border-radius: 17px;
+  margin-right: 10px;
+  padding: 14px;
+}
+
+h1 {
+    padding-top: 34px;
+    font-size: 56px;
+}
+
+h4 {
+  font-size: 25px;
+}
+
+h1,
+h4 {
+  color: #000000;
+  text-shadow: 0 0 1px rgb(14, 13, 13), 0 0 1px, #fff;
+  padding-left: 4px;
+  margin-top: -5px;
+}
+
+h5 {
+    padding-left: 8px;
+    margin-top: 14px;
+    opacity: 0.7;
+    padding-bottom: 31px;
+    font-size: 15px;
+    color: rgb(114, 114, 114);
+}
+
+ul {
+  margin-top: 64px;
+  margin-bottom: -50px;
+}
+
+.infoBox {
+    position: relative;
+    border: 1px solid #e4e4e4;
+    border-radius: 8px;
+    background-image: linear-gradient(to top, #dfe9f3 0%, white 100%);
+    box-shadow: 10px 10px 2px 1px rgb(182 209 241);
+    max-width: 522px;
+    width: 522px;
+    height: 379px;
+    padding-top: 48px;
+    padding-left: 5px;
+    padding-bottom: 40px;
+}
+
+.elements ul {
+  list-style-type: none;
+  padding-top: 21px;
+  padding-left: 5px;
+}
+
+.elements li {
+  position: relative;
+  padding: 25px;
+  padding-top: 5;
+  padding-left: 16px;
+  font-size: 20px;
+  bottom: 106px;
+}
+
+.data ul {
+  position: relative;
+  max-width: 421px;
+  top: -265px;
+  height: 300px;
+  list-style-type: none;
+  top: 46px;
+  padding-left: 28%;
+  font-size: 20px;
+  margin-bottom: -300px;
+}
+
+.data li {
+  position: relative;
+  padding: 24px;
+  font-size: 20px;
+  top: -482px;
+  left: 62%;
+}
+
+.conditionBox {
+    text-transform: capitalize;
+    border: 1px solid #e4e4e4;
+    border-radius: 8px;
+    box-shadow: 10px 10px 2px 1px rgb(182 209 241);
+    background-image: linear-gradient(to top, #dfe9f3 0%, white 100%);
+    padding-left: 3px;
+    width: 522px;
+    height: 378px;
+    margin-left: 54%;
+    position: relative;
+    left: 57px;
+    bottom: 378px;
+}
+
+#currentEmoji {
+  position: relative;
+  font-size: 170px;
+  top: -168px;
+  left: -13px;
+}
+
+p {
+  font-size: 30px;
+  padding-left: 43px;
+  padding-top: 4px;
+  margin-bottom: -2rem;
+}
+
+.temperature {
+  position: relative;
+  padding-left: 62%;
+  top: 75px;
+  font-size: 88px;
+}
+
+.units {
+  position: relative;
+  padding-left: 80%;
+  top: -50px;
+  font-size: 20px;
+}
+
+.feel {
+  position: relative;
+  padding-left: 59%;
+  text-align: center;
+  bottom: -56px;
+  font-size: 17px;
+}
+
+#feel {
+  position: relative;
+  padding-left: 60%;
+  text-align: center;
+  bottom: 45px;
+  font-size: 17px;
+}
+
+#feelDegree {
+  position: relative;
+  padding-left: 67%;
+  text-align: center;
+  bottom: 38px;
+  font-size: 17px;
+}
+
+.weekday {
+  position: relative;
+  width: 117%;
+  display: flex;
+  text-align: center;
+  bottom: 256px;
+  font-size: 1.5rem;
+  align-items: center;
+}
+
+#mon,
+#tues,
+#wed,
+#thurs,
+#fri,
+#sat,
+#sund {
+  border: 3px solid #d4e3f4;
+  width: 212px;
+  height: 159px;
+  background-image: linear-gradient(to top, #e3e8ee 0%, white 100%);
+  color: #000;
+}
+
+.panel {
+  background-size: auto 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 80vh;
+  border-radius: 14px;
+  color: #fff;
+  cursor: pointer;
+  flex: 0.5;
+  margin: 7px;
+  position: relative;
+  transition: flex 0.7s ease-in;
+}
+
+.panel p {
+  font-size: 5px;
+  position: absolute;
+  bottom: 6px;
+  left: -11px;
+  margin: 0;
+  opacity: 0;
+}
+
+.panel temp {
+  font-size: 35px;
+  position: absolute;
+  bottom: 6px;
+  left: 10px;
+  margin: 0;
+  opacity: 0;
+}
+
+.panel ul {
+  list-style-type: none;
+}
+
+.panel.active {
+  flex: 5;
+  border-radius: 20px;
+}
+
+.panel.active p {
+  opacity: 1;
+  transition: opacity 0.3s ease-in 0.4s;
+}
+
+.panel.active temp {
+  opacity: 1;
+  transition: opacity 0.3s ease-in 0.4s;
+}
+
+i {
+  font-size: 70px;
+}

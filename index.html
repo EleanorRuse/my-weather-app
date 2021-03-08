@@ -1,13 +1,177 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Weather App</title>
+    <meta charset="UTF-8" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/38772d4d0e.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <link href="style.css" rel="stylesheet" type="text/css" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 </head>
-<body>
+
+<div>
+    <div class="container" id="city-Selector">
+        <form id="search-form">
+            <input type="text" placeholder="Search for a city" autocomplete="off" autofocus="on"
+                id="search-text-input" />
+            <input type="submit" value="Search" id=search-Button />
+            <input type="submit" value="Current Location" id="location-search" />
+        </form>
+
+        <h1 id="city">
+            Enter A City.....
+        </h1>
+
+        <h4>
+            Sunday 14th February 2021
+        </h4>
+
+        <h5>
+            <small> Last Updated: 18:15 </small>
+        </h5>
+
+        <div class="infoBox">
+
+            <span class="elements" id="elements">
+                <ul>
+                    <li>💨Wind (km/h) </li>
+                    <li>☔Humidity (%) </li>
+                    <li>🌡️ Max Temp (°C)</li>
+                    <li>🧊Min Temp (°C) </li>
+                </ul>
+            </span>
+
+            <span class="data" id="data">
+                <ul>
+                    <li id="wind"></li>
+                    <li id="humid"></li>
+                    <li id="max"></li>
+                    <li id="min"></li>
+                </ul>
+        </div>
+
+        </span>
+
+
+        <div class="conditionBox">
+            <p id="description">
+
+            </p>
+
+            <span class="temperature" id="temperature">00</span><span class="units">
+                <a href="#" id="celsius-link">°C</a> |
+                <a href="#" id="fahrenheit-link">°F</a>
+            </span>
+
+            <span class="feel">
+                Feels Like:
+                <p id="feel">
+                    0
+                </p>
+                <div class="degree" id="feelDegree">
+                    °C
+                </div>
+            </span>
+
+
+            <img src="https://media.giphy.com/media/T7bsDUf301B4Mp3xug/giphy.gif" alt="mostly cloudly" width="300"
+                class="sunny" id="currentEmoji" />
+
+        </div>
+
+
+        <div class="weekday" id=days>
+
+            <div class="panel" id="mon">
+                Mon
+                <br />
+
+                <img src="https://gifdownload.net/wp-content/uploads/2019/01/cloud-loading-gif-5.gif" alt="cloud"
+                    width="80" class="cloud" />
+
+                <div class="temp">
+                    12°C
+                </div>
+            </div>
+
+            <div class="panel" id="tues">
+                Tues
+                <br />
+                <img src="https://media.giphy.com/media/fwR54Wq7dYu9VXKiAF/giphy.gif" alt="sunny" width="80"
+                    class="sunny" />
+                <div class="temp">
+                    15°C
+                </div>
+
+            </div>
+
+            <div class="panel" id="wed">
+                Weds
+                <br />
+                <img src="https://gifdownload.net/wp-content/uploads/2019/01/cloud-loading-gif-5.gif" alt="cloud"
+                    width="80" class="clouds" />
+                <div class="temp">
+                    13°C
+                </div>
+
+            </div>
+
+            <div class="panel" id="thurs">
+                Thurs
+                <br />
+                <img src="https://gifdownload.net/wp-content/uploads/2019/01/cloud-loading-gif-5.gif" alt="cloud"
+                    width="80" class="clouds" />
+                <div class="temp">
+                    15°C
+                </div>
+
+            </div>
+
+            <div class="panel" id="fri">
+                Fri
+                <br />
+                <img src="https://gifdownload.net/wp-content/uploads/2019/01/cloud-loading-gif-5.gif" alt="cloud"
+                    width="80" class="clouds" />
+
+                <div class="temp">
+                    15°C
+                </div>
+
+            </div>
+
+            <div class="panel" id="sat">
+                Sat
+                <br />
+                <img src="https://media.giphy.com/media/T7bsDUf301B4Mp3xug/giphy.gif" alt="mostly cloudly" width="80"
+                    class="sunny" />
+                <div class="temp">
+                    16°C
+                </div>
+
+            </div>
+
+            <div class="panel" id="sund">
+                Sun
+                <br />
+                <img src="https://media.giphy.com/media/fwR54Wq7dYu9VXKiAF/giphy.gif" alt="sunny" width="80"
+                    class="sunny" />
+                <div class="temp">
+                    18°C
+                </div>
+            </div>
+
+        </div>
+    </div>
+
     <script src="script.js"></script>
+
+
+</div>
 </body>
+
 </html>
