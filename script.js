@@ -28,6 +28,7 @@ function updateWeather(response) {
   let maxTempResult = document.querySelector("#max");
   let minTempResult = document.querySelector("#min");
   let feelResult = document.querySelector("#feel");
+  let currentEmoji = document.querySelector ("#currentEmoji");
 
   let temperatureRounded = Math.round(response.data.main.temp);
 
@@ -39,7 +40,13 @@ function updateWeather(response) {
   minTempResult.innerHTML = Math.round(response.data.main.temp_min);
   windResult.innerHTML = Math.round(response.data.wind.speed);
   feelResult.innerHTML = Math.round(response.data.main.feels_like);
+  currentEmoji.setAttribute("src",`https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`);
+
+  currentEmoji.setAttribute ("alt", response.data.weather[0].description);
 }
+
+//days of the week
+
 
 function retrievePosition(position) {
   let lat = position.coords.latitude;
