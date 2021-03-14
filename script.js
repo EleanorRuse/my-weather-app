@@ -52,16 +52,20 @@ function retrievePosition(position) {
 navigator.geolocation.getCurrentPosition(retrievePosition);
 
 //Display Date & Last Update
+function formatDate(fullDate) {
+
 let now = new Date();
 let date = now.getDate();
 let year = now.getFullYear();
 let hour = now.getHours();
+if (hour < 10) {
+  hour = `0 ${hour}`;
+}
 let minute = now.getMinutes();
+if (minute < 10) {
+  minute = `0 ${minute}`;
+}
 
-let h4 = document.querySelector("h4");
-let h5 = document.querySelector("h5");
-
-function formatDate(fullDate) {
   let days = [
     "Sunday",
     "Monday",
@@ -90,10 +94,13 @@ function formatDate(fullDate) {
   ];
   let month = months[now.getMonth()];
 
+  let h4 = document.querySelector("h4");
+  let h5 = document.querySelector("h5");
+
   h4.innerHTML = `${day} ${date} ${month} ${year}`;
   h5.innerHTML = `Last Updated: ${hour}:${minute}`;
 }
-console.log(formatDate());
+formatDate();
 
 //Celsius to Fahrenheit
 
