@@ -73,9 +73,9 @@ ul {
 
 .infoBox {
     position: relative;
-    border: 1px solid #e4e4e4;
+    border: 1px transparent #3d3b3b;
     border-radius: 28px;
-   background-color: #feffff;
+    background: linear-gradient(181.2deg, rgb(181, 239, 249) 10.5%, rgb(254, 254, 254) 86.8%);
     box-shadow: 10px 10px 2px 1px rgb(182 209 241);
     max-width: 522px;
     width: 522px;
@@ -83,6 +83,20 @@ ul {
     padding-top: 48px;
     padding-left: 5px;
     padding-bottom: 40px;
+}
+
+.conditionBox {
+    text-transform: capitalize;
+    border: 1px solid #bdeaf1;
+    border-radius: 28px;
+    box-shadow: 10px 10px 2px 1px rgb(182 209 241);
+    background: linear-gradient(181.2deg, rgb(181, 239, 249) 10.5%, rgb(254, 254, 254) 86.8%);
+    width: 522px;
+    height: 378px;
+    margin-left: 54%;
+    position: relative;
+    left: 57px;
+    bottom: 378px;
 }
 
 .elements ul {
@@ -118,20 +132,6 @@ ul {
     font-size: 20px;
     top: -475px;
     left: 77%;
-}
-
-.conditionBox {
-    text-transform: capitalize;
-    border: 1px solid #bdeaf1;
-    border-radius: 28px;
-    box-shadow: 10px 10px 2px 1px rgb(182 209 241);
-    background: linear-gradient(181.2deg, rgb(181, 239, 249) 10.5%, rgb(254, 254, 254) 86.8%);
-    width: 522px;
-    height: 378px;
-    margin-left: 54%;
-    position: relative;
-    left: 57px;
-    bottom: 378px;
 }
 
 #currentEmoji {
@@ -196,7 +196,7 @@ p {
   align-items: center;
 }
 
-#mon,
+#forecast,
 #tues,
 #wed,
 #thurs,

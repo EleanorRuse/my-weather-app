@@ -3,19 +3,45 @@
 //search engine
 let apiKey = "99249e6036b7cd3ba4446e3f8c097e60";
 
-function defineCity(event) {
+function displayForecast(response) {
+  let forecastElement = document.querySelector("#forecast");
+  nextHoursForecast.innerHTML = null;
+  let forecast = null;
+
+  for (let index = 0; index < 6; index++) {
+    forecast = response.data.list[index];
+    forecastElement.innerHTML += `
+    <div class="col-2">
+      <h3>
+        ${formatHour(forecast.dt*1000)}
+      </h3>
+      <img
+        src="http://openweathermap.org/img/wn/${forecast.weather[0].icon}@2x.png"
+      />
+      <div class="next-weather-temperature">
+        <strong>
+          ${Math.round(forecast.main.temp_max)}°
+        </strong>
+        ${Math.round(forecast.main.temp_min)}°
+      </div>
+    </div>
+  `;
+  }
+}
+
+function searchCity(event) {
   event.preventDefault();
   let searchCity = document.querySelector("#search-text-input").value;
-  axios
-    .get(
-      `https://api.openweathermap.org/data/2.5/weather?q=${searchCity}&appid=${apiKey}&units=metric
-   `
-    )
-    .then(updateWeather);
+  axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${searchCity}&appid=${apiKey}&units=metric`)
+  .then(updateWeather);
+
+  apiURL =(`https://api.openweathermap.org/data/2.5/forecast?q=${searchCity}&appid=${apiKey}&units=metric`);
+  axios.get(apiURL).then(displayForecast);
+
 }
 
 let searchForm = document.querySelector("#search-form");
-searchForm.addEventListener("submit", defineCity);
+searchForm.addEventListener("submit", searchCity);
 
 //Both Weather Update API
 
