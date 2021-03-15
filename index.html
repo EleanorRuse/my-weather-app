@@ -8,13 +8,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/38772d4d0e.js" crossorigin="anonymous"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <link href="style.css" rel="stylesheet" type="text/css" />
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 </head>
 
 <div>
+
     <div class="container" id="city-Selector">
         <form id="search-form">
             <input type="text" placeholder="Search for a city" autocomplete="off" autofocus="on"
@@ -79,82 +80,14 @@
             </span>
 
 
-            <img src="https://media.giphy.com/media/T7bsDUf301B4Mp3xug/giphy.gif" alt="mostly cloudly" width="300"
+            <img src="https://ssl.gstatic.com/onebox/weather/48/rain_s_cloudy.png" alt="mostly cloudly" width="300"
                 class="sunny" id="currentEmoji" />
 
         </div>
-
-        <div class="weekday" id=days>
-
-            <div class="panel" id="forecast">
-                12:00
-                <br />
-
-                <img src="https://gifdownload.net/wp-content/uploads/2019/01/cloud-loading-gif-5.gif" alt="cloud"
-                    width="80" class="clouds" />
-
-                <div class="temp">
-            <strong>13°C </strong> /10°C
-                </div>
-            </div>
-
-            <div class="panel" id="tues">
-            15:00
-                <br />
-                <img src="https://media.giphy.com/media/fwR54Wq7dYu9VXKiAF/giphy.gif" alt="sunny" width="80"
-                    class="sunny" />
-                <div class="temp">
-            <strong>13°C </strong> /10°C
-                </div>
-
-            </div>
-
-            <div class="panel" id="wed">
-               18:00
-                <br />
-                <img src="https://gifdownload.net/wp-content/uploads/2019/01/cloud-loading-gif-5.gif" alt="cloud"
-                    width="80" class="clouds" />
-                <div class="temp">
-                   <strong>13°C </strong> /10°C
-                </div>
-
-            </div>
-
-            <div class="panel" id="thurs">
-                Thurs
-                <br />
-                <img src="https://gifdownload.net/wp-content/uploads/2019/01/cloud-loading-gif-5.gif" alt="cloud"
-                    width="80" class="clouds" />
-                <div class="temp">
-                <strong>13°C </strong> /10°C
-                </div>
-
-            </div>
-
-            <div class="panel" id="fri">
-                Fri
-                <br />
-                <img src="https://gifdownload.net/wp-content/uploads/2019/01/cloud-loading-gif-5.gif" alt="cloud"
-                    width="80" class="clouds" />
-
-                <div class="temp">
-                <strong>13°C </strong> /10°C
-                </div>
-
-            </div>
-
-            <div class="panel" id="sat">
-                Sat
-                <br />
-                <img src="https://media.giphy.com/media/T7bsDUf301B4Mp3xug/giphy.gif" alt="mostly cloudly" width="80"
-                    class="sunny" />
-                <div class="temp">
-                <strong>13°C </strong> /10°C
-                </div>
-
-            </div>
-
-</div>
+        
+    <div class="row weather-forecast" id="forecast">
+        
+    </div>
  <a href="https://github.com/EleanorRuse/my-weather-app">Open-source code</a>  by Eleanor Ruse
     <script src="script.js"></script>
  </div>
