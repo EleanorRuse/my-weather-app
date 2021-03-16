@@ -132,7 +132,7 @@ ul {
 #currentEmoji {
   position: relative;
   font-size: 170px;
-  top: -239px;
+  top: -203px;
   left: -13px;
 }
 
@@ -150,15 +150,12 @@ p {
   font-size: 88px;
 }
 
-a:link {
-  text-decoration: none;
-  color:#fff;
-  position: relative;
-  padding-left: 84%;
-  top: -50px;
-  font-size: 20px;
 
-}
+ a { 
+      text-decoration:none; 
+      color:#fff;
+      font-size: 22px;
+ }
 
 .feel {
   position: relative;
