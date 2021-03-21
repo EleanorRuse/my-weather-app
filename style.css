@@ -37,7 +37,7 @@ margin-top: 61px;
 }
 
 #searchButton, #locationButton {
-  margin-right: -71px;
+  margin-right: -50px;
 }
 
 h1 {
@@ -72,11 +72,11 @@ h5 ul {
 
 .infoBox ul {
     list-style-type: none;
-    display:inline;
+    display: inline;
     position: relative;
-    font-size: 25px;
-    bottom: 15px;
-    left: 30px;
+    font-size: 30px;
+    bottom: 17px;
+    left: 31px;
 }
 
 .conditionBox {
@@ -192,7 +192,7 @@ p {
 
 .weather-forecast {
     position: relative;
-    margin-top: 142px;
+    margin-top: 140px;
     padding-bottom: 72px;
     width: 100%;
     color: #000;
