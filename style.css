@@ -1,24 +1,23 @@
 body {
 background-image: url(https://images.unsplash.com/photo-1604888312956-f48d40808fe2?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2000&q=80) ;
-font-family: "Noto Sans JP", sans-serif;
+font-family: 'Inter', sans-serif;
 min-height: 100%;
 background-size: cover;
 background-repeat: no-repeat;
-
 }
 
-
 .container {
-  margin-left: 83px;
+  display:flex;
+  margin-left: auto;
   margin-right: auto;
   width: auto;
   height:100%;
 
 }
-
 #search-form {
   padding-top: 50px;
   margin: 0px;
+  
 }
 
 #search-Button,
@@ -26,7 +25,7 @@ background-repeat: no-repeat;
   color: #ffff;
   margin-right: -92px;
   background: linear-gradient(to bottom, #323232 0%, #3F3F3F 40%, #1C1C1C 150%), linear-gradient(to top, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.25) 200%);
- background-blend-mode: multiply;
+  background-blend-mode: multiply;
   box-shadow: 4px 1px 3px 1px #323232;
 }
 
@@ -40,7 +39,7 @@ background-repeat: no-repeat;
 }
 
 #searchButton, #locationButton {
-  margin-right: -92px;
+     margin-right: 2px
 }
 
 h1 {
@@ -65,6 +64,14 @@ h5 ul {
     font-size: 15px;
     color: rgb(26, 24, 24);
 }
+.conditionBox {
+    text-shadow: 0 3 5px rgb(12, 10, 10), 0 0 3px, #fff;
+    text-transform: capitalize;
+    min-width:486px;
+    margin-left: 56%;
+    right: 242px;
+    bottom: 0px;
+}
 
 .conditionBox ul {
     list-style-type: none;
@@ -72,6 +79,12 @@ h5 ul {
     margin-bottom: -72px;
 }
 
+.infoBox {
+    width: 400px;
+    min-width: 404px;
+    margin-left: 25%;
+    padding-left: 27px;
+}
 
 .infoBox ul {
     list-style-type: none;
@@ -79,22 +92,7 @@ h5 ul {
     position: relative;
     font-size: 30px;
     bottom: 17px;
-    left: 31px;
-}
-
-.conditionBox {
-    text-shadow: 0 3 5px rgb(12, 10, 10), 0 0 3px, #fff;
-    text-transform: capitalize;
-    width: 521px;
-    min-width:486px;
-    margin-left: 41%;
-    left: -250px;
-    bottom: 0px;
-}
-
-.infoBox {
-    width: 400px;
-    min-width: 404px;
+    
 }
 
 .conditionBox,
@@ -108,31 +106,46 @@ h5 ul {
   position: relative;
   border: 1px transparent #3d3b3b;
   border-radius: 28px; 
+}
 
+.float-left {
+    position: relative;
+    padding-left: 41%;
+    text-align: center;
+    bottom: 216px;
+    font-size: 57px;
+}
+
+#feels-like {
+  position: relative;
+  text-align: center;
+  bottom: 75px;
+  font-size: 17px;
+}
+
+#feel {
+  position: relative;
+  text-align: center;
+  font-size: 17px
 }
 
 #visibility {
-  display:inline;
   padding-left: 28%;
-  position: relative;
-  text-align: center;
-  bottom: -3px;
   font-size: 31px;
 }
 
-
 #humidity {
-  padding-left: 25%;
+  padding-left: 26%;
   font-size: 31px;
 }
 
 #wind {
-  padding-left: 39%;
+  padding-left: 40%;
   font-size: 31px;
 }
 
 #maxTemp {
-  padding-left: 22%;
+  padding-left: 20%;
   font-size: 31px;
 }
 
@@ -175,37 +188,14 @@ p {
       font-size: 22px;
  }
 
-.float-left {
-    position: relative;
-    padding-left: 41%;
-    text-align: center;
-    bottom: 216px;
-    font-size: 57px;
-}
-
-
-#feels-like {
-  position: relative;
-  text-align: center;
-  bottom: 75px;
-  font-size: 17px;
-}
-
-#feel {
-  position: relative;
-  text-align: center;
-  font-size: 17px
-}
-
 
 .weather-forecast {
     position: relative;
     margin-top: 70px;
     padding-bottom: 60px;
-    width: 81%;
+    width: 97%;
     color: #000;
 }
-
 
 .weather-forecast h3 {
   font-size:23px; 
