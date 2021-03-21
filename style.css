@@ -17,7 +17,6 @@ justify-content: center;
 }
 #search-form {
   padding-top: 50px;
-
 }
 
 #search-Button,
@@ -58,6 +57,7 @@ h5 ul {
     font-size: 15px;
     color: rgb(250, 250, 250);
 }
+
 .conditionBox {
     text-shadow: 0 3 5px rgb(12, 10, 10), 0 0 3px, #fff;
     text-transform: capitalize;
@@ -73,33 +73,6 @@ h5 ul {
     margin-bottom: -72px;
 }
 
-.infoBox {
-    left: 7%;
-}
-
-.infoBox ul {
-  left:5%;
-    list-style-type: none;
-    display: inline;
-    position: relative;
-    font-size: 30px;
-    bottom: 17px;
-}
-
-.conditionBox,
-.infoBox{
-  color: #ffffff;
-  margin-top: 7px;
-  height: 283px;
-  width:400px;
-  background: linear-gradient(to bottom, #323232 0%, #3F3F3F 40%, #1C1C1C 150%), linear-gradient(to top, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.25) 200%);
-  background-blend-mode: multiply;
-  box-shadow: 6px 1px 3px 1px 323232;
-  position: relative;
-  border: 1px transparent #3d3b3b;
-  border-radius: 28px; 
-}
-
 .float-left {
     position: relative;
     text-align: center;
@@ -107,54 +80,6 @@ h5 ul {
     font-size: 57px;
 }
 
-#feels-like {
-position: relative;
-    text-align: center;
-    bottom: 36px;
-    font-size: 17px;
-    left: 65px;
-}
-
-
-
-#feel {
-  position: relative;
-  text-align: center;
-  font-size: 17px
-}
-
-#visibility {
-  padding-left: 26%;
-  font-size: 31px;
-}
-
-#humidity {
-  padding-left: 24%;
-  font-size: 31px;
-}
-
-#wind {
-    padding-left: 36%;
-    font-size: 31px;
-}
-
-
-#maxTemp {
-  padding-left: 20%;
-  font-size: 31px;
-}
-
-#minTemp {
-  padding-left: 23%;
-  font-size: 31px;
-}
-
-#currentEmoji {
-    position: relative;
-    top: 0px;
-    right: -22px;
-    width: 50%;
-}
 
 .units {
     position: relative;
@@ -184,6 +109,80 @@ p {
  }
 
 
+#feels-like {
+position: relative;
+    text-align: center;
+    bottom: 36px;
+    font-size: 17px;
+    left: 65px;
+}
+
+#feel {
+  position: relative;
+  text-align: center;
+  font-size: 17px
+}
+
+
+.infoBox {
+    left: 7%;
+}
+
+.infoBox ul {
+  left:5%;
+    list-style-type: none;
+    display: inline;
+    position: relative;
+    font-size: 30px;
+    bottom: 17px;
+}
+
+#visibility {
+  padding-left: 26%;
+  font-size: 31px;
+}
+
+#humidity {
+  padding-left: 24%;
+  font-size: 31px;
+}
+
+#wind {
+    padding-left: 36%;
+    font-size: 31px;
+}
+
+#maxTemp {
+  padding-left: 20%;
+  font-size: 31px;
+}
+
+#minTemp {
+  padding-left: 22%;
+  font-size: 31px;
+}
+
+.conditionBox,
+.infoBox{
+  color: #ffffff;
+  margin-top: 7px;
+  height: 283px;
+  width:400px;
+  background: linear-gradient(to bottom, #323232 0%, #3F3F3F 40%, #1C1C1C 150%), linear-gradient(to top, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.25) 200%);
+  background-blend-mode: multiply;
+  box-shadow: 6px 1px 3px 1px 323232;
+  position: relative;
+  border: 1px transparent #3d3b3b;
+  border-radius: 28px; 
+}
+
+#currentEmoji {
+    position: relative;
+    top: 0px;
+    right: -22px;
+    width: 50%;
+}
+
 .weather-forecast {
     position: relative;
     margin-top: 70px;
@@ -212,8 +211,8 @@ p {
 .weather-forecast img {
   display: block;
   margin: 0 auto;
-    height: 70px;
-    width: 70px;
+  height: 70px;
+  width: 70px;
   top: -5px;
 }
 
@@ -230,14 +229,14 @@ p {
 display:block; text-decoration:none;}
 
 
-small a {
+small a{
     text-decoration: none;
     color: rgb(255, 255, 255);
     font-size: 18px;
     margin-top: 50px;
 }
 
-small {
+small{
   color:rgb(0, 0, 0);
   font-size: 18px;
 }
