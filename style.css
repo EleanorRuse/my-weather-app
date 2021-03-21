@@ -233,9 +233,10 @@ small a {
     color: rgb(1, 61, 172);
     font-size: 18px;
     margin-top: 50px;
-    padding-left: 51px;
 }
 
 small {
   color:#fff;
+  font-size: 18px;
 }
+
