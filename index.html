@@ -1,96 +1,106 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <title>☀️🌡️Weather App🌧️☂️</title>
-    <meta charset="UTF-8" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/38772d4d0e.js" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <link href="style.css" rel="stylesheet" type="text/css" />
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <title>☀️Weather App🌧️</title>
 </head>
 
-<div>
-
-    <div class="container" id="city-Selector">
-        <form id="search-form">
-            <input type="text" placeholder="Search for a city" autocomplete="off" autofocus="on"
-                id="search-text-input" />
-            <input type="submit" value="Search" id=search-Button />
-            <input type="submit" value="Current Location" id="location-search" />
-        </form>
-
-        <h1 id="city">
-            Enter A City.....
-        </h1>
-
-        <h4>
-            Sunday 14th February 2021
-        </h4>
-
-        <h5>
-            <small> Last Updated: 18:15 </small>
-        </h5>
-
-        <div class="infoBox">
-
-            <span class="elements" id="elements">
-                <ul>
-                    <li>💨Wind (km/h) </li>
-                    <li>💧Humidity (%) </li>
-                    <li>🌡️ Max Temp (°C)</li>
-                    <li>🧊Min Temp (°C) </li>
-                </ul>
-            </span>
-
-            <span class="data" id="data">
-                <ul>
-                    <li id="wind"></li>
-                    <li id="humid"></li>
-                    <li id="max"></li>
-                    <li id="min"></li>
-                </ul>
-        </div>
-
-        </span>
-
-
-        <div class="conditionBox">
-            <p id="description">
-
-            </p>
-
-            <span class="temperature" id="temperature">00</span>
-            <span class="units">
-                <a href="#" id="celsius-link">°C</a> ↔️
-                <a href="#" id="fahrenheit-link">°F</a>
-            </span>
-
-            <span class="feel">
-                Feels Like:
-                <p id="feel">
-                    0
-                </p>
-                <div class="degree" id="feelDegree">
-                    °C
+<body>
+    <div class="container">
+        <div class="weather-app-wrapper">
+            <div class="weather-app">
+                <form id="search-form" class="mb-3">
+                    <div class="row">
+                        <div class="col-7">
+                            <input type="search" placeholder="Enter A City..." class="form-control" id="search-text-input"
+                                autocomplete="off" />
+                        </div>
+                        <div class="col-2" id="searchButton">
+                            <input type="submit" value="Search"  id="search-Button" />
+                        </div>
+                        <div class="col-2" id="locationButton">
+                            <input type="submit" value="Current Location "  id="location-search"
+                             />
+                        </div>
+                    </div>
+                </form>
+                <div class="overview">
+                    <h1 id="city">
+                    </h1>
+                    <h5>
+                    <ul>
+                        <li>Last updated: <span id="date"></span>
+                        </li>
+                    </ul>
+                </h5>
                 </div>
-            </span>
+                <div class="row">
+                    <div class="col-6" id="conditionBox">
+                        <div class="clearfix weather-temperature">
+                    <div class="conditionBox">
+                            <p id="description">
+                                </p>
+                            <img src="" alt="" class="currentEmoji" id="currentEmoji"/>
+                            <div class="float-left">
+                                <strong id="temperature"></strong>
+                               <ul id="feels-like">
+                                    <li>
+                                        Feels like: <span id="feel"></span>
+                                    </li>
+                               </ul>
+                                <span class="units">
+                                    <a href="#" id="celsius-link" class="active">°C</a>|<a href="#"
+                                        id="fahrenhiet-link">°F</a>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="col-6" id="infoBox">
+                        <div class="infoBox">
+                            <ul>
+                                <li>
+                                 Visibility: <span id="visibility"></span> %
+                                </li>
+                                <li>
+                                Humidity: <span id="humidity"></span> %
+                                </li>
+                                <li>
+                                Wind: <span id="wind"></span> km/h
+                                </li>
+                                <li>
+                                    Max Temp: <span id="maxTemp"></span> °C
+                                </li>
+                                <li>
+                                    Min Temp: <span id="minTemp"></span> °C
+                                </li>
+                                
 
-            <img src="https://openweathermap.org/img/wn/04d@2x.png" alt="emojiPlaceholder" width="300"
-                class="sunny" id="currentEmoji" />
 
+                                
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="row weather-forecast" id="forecast">
+                </div>
+            </div>
+            <small>
+                <a href="https://github.com/EleanorRuse/my-weather-app">Open-source code</a> by Eleanor Ruse
+            </small>
         </div>
-        
-    <div class="row weather-forecast" id="forecast">
-        
     </div>
- <a href="https://github.com/EleanorRuse/my-weather-app">Open-source code</a>  by Eleanor Ruse
-    <script src="script.js"></script>
- </div>
-   </div>
+<script src="script.js"></script>
 </body>
 
 </html>
