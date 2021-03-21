@@ -4,13 +4,15 @@ font-family: "Noto Sans JP", sans-serif;
 min-height: 100%;
 background-size: cover;
 background-repeat: no-repeat;
+
 }
 
 
 .container {
   margin-left: 83px;
   margin-right: auto;
-  width: 1072px;
+  width: auto;
+  height:100%;
 
 }
 
@@ -22,6 +24,7 @@ background-repeat: no-repeat;
 #search-Button,
 #location-search {
   color: #ffff;
+  margin-right: -92px;
   background: linear-gradient(to bottom, #323232 0%, #3F3F3F 40%, #1C1C1C 150%), linear-gradient(to top, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.25) 200%);
  background-blend-mode: multiply;
   box-shadow: 4px 1px 3px 1px #323232;
@@ -30,14 +33,14 @@ background-repeat: no-repeat;
 #search-text-input,
 #search-Button,
 #location-search {
-border-radius: 20px;
-margin-left: 3px;
-padding: 15px;
-margin-top: 61px;
+    border-radius: 20px;
+    margin-left: 8px;
+    padding: 15px;
+    margin-top: 61px;;
 }
 
 #searchButton, #locationButton {
-  margin-right: -50px;
+  margin-right: -92px;
 }
 
 h1 {
@@ -82,20 +85,25 @@ h5 ul {
 .conditionBox {
     text-shadow: 0 3 5px rgb(12, 10, 10), 0 0 3px, #fff;
     text-transform: capitalize;
-    margin-left: 50%;
+    width: 521px;
+    min-width:486px;
+    margin-left: 41%;
     left: -250px;
     bottom: 0px;
+}
+
+.infoBox {
+    width: 400px;
+    min-width: 404px;
 }
 
 .conditionBox,
 .infoBox {
   color: #ffffff;
-  width: 486px;
   margin-top: 7px;
-  height: 295px;
+  height: 283px;
   background: linear-gradient(to bottom, #323232 0%, #3F3F3F 40%, #1C1C1C 150%), linear-gradient(to top, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.25) 200%);
   background-blend-mode: multiply;
-  position: relative;
   box-shadow: 6px 1px 3px 1px 323232;
   position: relative;
   border: 1px transparent #3d3b3b;
@@ -105,7 +113,7 @@ h5 ul {
 
 #visibility {
   display:inline;
-  padding-left: 40%;
+  padding-left: 28%;
   position: relative;
   text-align: center;
   bottom: -3px;
@@ -114,22 +122,22 @@ h5 ul {
 
 
 #humidity {
-  padding-left: 39%;
+  padding-left: 25%;
   font-size: 31px;
 }
 
 #wind {
-  padding-left: 49%;
+  padding-left: 39%;
   font-size: 31px;
 }
 
 #maxTemp {
-  padding-left: 37%;
+  padding-left: 22%;
   font-size: 31px;
 }
 
 #minTemp {
-  padding-left: 38%;
+  padding-left: 23%;
   font-size: 31px;
 }
 
@@ -192,11 +200,12 @@ p {
 
 .weather-forecast {
     position: relative;
-    margin-top: 140px;
-    padding-bottom: 72px;
-    width: 100%;
+    margin-top: 70px;
+    padding-bottom: 60px;
+    width: 81%;
     color: #000;
 }
+
 
 .weather-forecast h3 {
   font-size:23px; 
@@ -226,7 +235,7 @@ p {
 
 small a {
     text-decoration: none;
-    color: rgb(25, 0, 165);
+    color: rgb(48, 15, 236);
     font-size: 18px;
     padding-left: 51px;
 }
