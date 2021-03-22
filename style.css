@@ -2,18 +2,12 @@ body {
 background-image: url(https://images.unsplash.com/photo-1452421822248-d4c2b47f0c81?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1050&q=80) ;
 font-family: 'Questrial', sans-serif;
 min-height: 100%;
+text-align:center;
 background-size: cover;
 background-repeat: no-repeat;
 display: flex;
 position:relative;
 justify-content: center;
-overflow:scroll;
-}
-
-@media (max-width: 479px) {
-    body {
-        font-size: 13px;
-    }
 }
 
 .container {
@@ -25,16 +19,18 @@ overflow:scroll;
 
 }
 
-
-#search-form {
+.search-form {
   padding-top: 50px;
+  width:50%:
 }
 
 #search-Button,
 #location-search {
+  width: 101%;
   padding-right:0;
   color: #ffff;
   margin-right:20%;
+  font-size:13px;
   background: linear-gradient(to bottom, #323232 0%, #3F3F3F 40%, #1C1C1C 150%), linear-gradient(to top, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.25) 200%);
   background-blend-mode: multiply;
   box-shadow: 4px 1px 3px 1px #323232;
@@ -44,7 +40,7 @@ overflow:scroll;
 #search-Button,
 #location-search {
     border-radius: 20px;
-    padding: 15px;
+    padding: 8px;
 }
 
 h1 {
@@ -73,7 +69,6 @@ h5 ul {
     text-shadow: 0 3 5px rgb(12, 10, 10), 0 0 3px, #fff;
     text-transform: capitalize;
     left: -3%;
-    min-width: 400px;
     right: 211px;
     bottom: 0px;
 }
@@ -94,8 +89,8 @@ h5 ul {
 
 .units {
     position: relative;
-    bottom: 139px;
-    left: 143px;
+    bottom: 55px;
+    left: 109px;
     width: 49%;
 }
 
@@ -103,14 +98,14 @@ p {
     font-size: 31px;
     padding-top: 18px;
     margin-bottom: -1rem;
-    margin-left: 24px;
+    margin-left: -59px;
 }
 
 #temperature {
     position: relative;
-    padding-left: 35%;
-    top: 32px;
-    font-size: 88px;
+    padding-left: 32%;
+    top: 102px;
+    font-size: 69px;
 }
 
  a { 
@@ -121,12 +116,13 @@ p {
 
 
 #feels-like {
-position: relative;
+    position: relative;
     text-align: center;
-    bottom: 36px;
+    bottom: -28px;
     font-size: 17px;
-    left: 65px;
+    left: 37px;
 }
+
 
 #feel {
   position: relative;
@@ -140,37 +136,37 @@ position: relative;
 }
 
 .infoBox ul {
-  left:5%;
+    right: 2%;
     list-style-type: none;
     display: inline;
     position: relative;
-    font-size: 30px;
-    bottom: 44px;
+    font-size: 23px;
+    bottom: 5px;
 }
 
 #visibility {
   padding-left: 26%;
-  font-size: 31px;
+  font-size: 23px;
 }
 
 #humidity {
   padding-left: 24%;
-  font-size: 31px;
+  font-size: 23px;
 }
 
 #wind {
-    padding-left: 36%;
-    font-size: 31px;
+    padding-left: 28%;
+    font-size: 23px;
 }
 
 #maxTemp {
   padding-left: 20%;
-  font-size: 31px;
+  font-size: 23px;
 }
 
 #minTemp {
   padding-left: 22%;
-  font-size: 31px;
+  font-size: 23px;
 }
 
 .conditionBox,
@@ -179,7 +175,7 @@ position: relative;
   color: #ffffff;
   margin-top: 7px;
   height: 233px;
-  width:360px;
+  width: 286px;
   background: linear-gradient(to bottom, #323232 0%, #3F3F3F 40%, #1C1C1C 150%), linear-gradient(to top, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.25) 200%);
   background-blend-mode: multiply;
   box-shadow: 6px 1px 3px 1px 323232;
@@ -190,7 +186,7 @@ position: relative;
 #currentEmoji {
     position: relative;
     top: 0px;
-    right: -22px;
+    right: 60px;
     width: 50%;
 }
 
@@ -199,7 +195,7 @@ position: relative;
     margin-top: 70px;
     padding-bottom: 1px;
     margin-left: -9px;
-    width: 103%;
+    width: 100%;
     color: rgb(250, 250, 250);
     opacity:1;
     background: linear-gradient(to bottom, #323232 0%, #3F3F3F 40%, #1C1C1C 150%), linear-gradient(to top, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.25) 200%);
