@@ -40,7 +40,7 @@ justify-content: center;
 #search-Button,
 #location-search {
     border-radius: 20px;
-    padding: 8px;
+    padding: 6px;
 }
 
 h1 {
@@ -69,6 +69,7 @@ h5 ul {
     text-shadow: 0 3 5px rgb(12, 10, 10), 0 0 3px, #fff;
     text-transform: capitalize;
     left: -3%;
+    width:270px;
     right: 211px;
     bottom: 0px;
 }
@@ -90,7 +91,7 @@ h5 ul {
 .units {
     position: relative;
     bottom: 55px;
-    left: 109px;
+    left: 99px;
     width: 49%;
 }
 
@@ -103,7 +104,7 @@ p {
 
 #temperature {
     position: relative;
-    padding-left: 32%;
+    padding-left: 27%;
     top: 102px;
     font-size: 69px;
 }
@@ -133,6 +134,7 @@ p {
 
 .infoBox {
     left: 7%;
+    width: 242px;
 }
 
 .infoBox ul {
@@ -150,12 +152,12 @@ p {
 }
 
 #humidity {
-  padding-left: 24%;
+  padding-left: 27%;
   font-size: 23px;
 }
 
 #wind {
-    padding-left: 28%;
+    padding-left: 33%;
     font-size: 23px;
 }
 
@@ -175,7 +177,6 @@ p {
   color: #ffffff;
   margin-top: 7px;
   height: 233px;
-  width: 286px;
   background: linear-gradient(to bottom, #323232 0%, #3F3F3F 40%, #1C1C1C 150%), linear-gradient(to top, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.25) 200%);
   background-blend-mode: multiply;
   box-shadow: 6px 1px 3px 1px 323232;
@@ -195,7 +196,7 @@ p {
     margin-top: 70px;
     padding-bottom: 1px;
     margin-left: -9px;
-    width: 100%;
+    width: 104%;
     color: rgb(250, 250, 250);
     opacity:1;
     background: linear-gradient(to bottom, #323232 0%, #3F3F3F 40%, #1C1C1C 150%), linear-gradient(to top, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.25) 200%);
