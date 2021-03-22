@@ -5,6 +5,7 @@ min-height: 100%;
 background-size: cover;
 background-repeat: no-repeat;
 display: flex;
+position:relative;
 justify-content: center;
 }
 
@@ -13,6 +14,7 @@ justify-content: center;
   margin-right: auto;
   width: auto;
   height:100%;
+  position:relative;
 
 }
 #search-form {
