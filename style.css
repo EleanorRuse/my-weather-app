@@ -17,6 +17,8 @@ justify-content: center;
   position:relative;
 
 }
+
+
 #search-form {
   padding-top: 50px;
 }
@@ -39,7 +41,7 @@ justify-content: center;
 }
 
 h1 {
-    padding-top: 191px;
+    padding-top: 139px;
     font-size: 56px;
 }
 
@@ -136,7 +138,7 @@ position: relative;
     display: inline;
     position: relative;
     font-size: 30px;
-    bottom: 17px;
+    bottom: 44px;
 }
 
 #visibility {
@@ -166,14 +168,14 @@ position: relative;
 
 .conditionBox,
 .infoBox{
+  position:relative;
   color: #ffffff;
   margin-top: 7px;
-  height: 283px;
-  width:400px;
+  height: 233px;
+  width:360px;
   background: linear-gradient(to bottom, #323232 0%, #3F3F3F 40%, #1C1C1C 150%), linear-gradient(to top, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.25) 200%);
   background-blend-mode: multiply;
   box-shadow: 6px 1px 3px 1px 323232;
-  position: relative;
   border: 1px transparent #3d3b3b;
   border-radius: 28px; 
 }
