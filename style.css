@@ -9,6 +9,12 @@ position:relative;
 justify-content: center;
 }
 
+@media (max-width: 479px) {
+    body {
+        font-size: 13px;
+    }
+}
+
 .container {
   margin-left: auto;
   margin-right: auto;
