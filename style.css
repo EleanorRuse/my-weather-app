@@ -5,7 +5,6 @@ min-height: 100%;
 text-align:center;
 background-size: cover;
 background-repeat: no-repeat;
-
 display: flex;
 position:relative;
 justify-content: center;
@@ -70,7 +69,6 @@ h5 ul {
     text-shadow: 0 3 5px rgb(12, 10, 10), 0 0 3px, #fff;
     text-transform: capitalize;
     left: 9%;
-    width: 270px;
     right: 211px;
     bottom: 0px;
 }
@@ -91,8 +89,8 @@ h5 ul {
 
 .units {
     position: relative;
-    bottom: 55px;
-    left: 99px;
+    bottom: 208px;
+    left: 187px;
     width: 49%;
 }
 
@@ -106,7 +104,7 @@ p {
 #temperature {
     position: relative;
     padding-left: 27%;
-    top: 88px;
+    bottom: 50px;
     font-size: 69px;
 }
 
@@ -120,9 +118,9 @@ p {
 #feels-like {
     position: relative;
     text-align: center;
-    bottom: -28px;
+    bottom: 130px;
     font-size: 17px;
-    left: 37px;
+    left: 78px;
 }
 
 
@@ -158,23 +156,24 @@ p {
 }
 
 #wind {
-    padding-left: 33%;
+    padding-left: 29%;
     font-size: 23px;
 }
 
 #maxTemp {
-  padding-left: 20%;
-  font-size: 23px;
+    padding-left: 23%;
+    font-size: 23px;
 }
 
 #minTemp {
-  padding-left: 22%;
+  padding-left: 24%;
   font-size: 23px;
 }
 
 .conditionBox,
 .infoBox{
   position:relative;
+  width: 199%;
   color: #ffffff;
   margin-top: 7px;
   height: 233px;
@@ -187,8 +186,8 @@ p {
 
 #currentEmoji {
     position: relative;
-    top: 0px;
-    right: 60px;
+    bottom: 81px;
+    right: 123px;
     width: 50%;
 }
 
@@ -196,8 +195,8 @@ p {
     position: relative;
     margin-top: 70px;
     padding-bottom: 1px;
-    margin-left: -9px;
-    width: 100%;
+    margin-left: -40px;
+    width: 123%;
     color: rgb(250, 250, 250);
     opacity:1;
     background: linear-gradient(to bottom, #323232 0%, #3F3F3F 40%, #1C1C1C 150%), linear-gradient(to top, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.25) 200%);
