@@ -15,13 +15,10 @@
 </head>
 
 <body>
-      
     <div class="container">
-        <div class="row">
-    <div class="weather-app-wrapper">
-            <div class="weather-app">
-      
-                <form id="search-form" class="mb-3">
+    <div class="weather-app-wrapper">    
+        <div class="weather-app">
+         <form id="search-form" class="mb-3">
                     <div class="row">
                         <div class="col-7">
                             <input type="search" placeholder="Enter A City..." class="form-control" id="search-text-input"
@@ -36,6 +33,7 @@
                         </div>
                     </div>
                 </form>
+
                 <div class="overview">
                     <h1 id="city">
                     </h1>
@@ -46,14 +44,16 @@
                     </ul>
                 </h5>
                 </div>
+
                 <div class="row">
-                    <div class="col-6" id="conditionBox">
+                    <div class="col-6">
                         <div class="clearfix weather-temperature">
                     <div class="conditionBox">
                             <p id="description">
                                 </p>
                             <img src="" alt="" class="currentEmoji" id="currentEmoji"/>
-                            <div class="float-left">
+                    
+                    <div class="mainInfo">
                                 <strong id="temperature"></strong>
                                <ul id="feels-like">
                                     <li>
@@ -68,7 +68,7 @@
                         </div>
                     </div>
                     </div>
-                    <div class="col-6" id="float-right">
+                    <div class="col-6">
                         <div class="infoBox">
                             <ul>
                                 <li>
@@ -102,7 +102,8 @@
         Background Image by Dariusz Sankowski
     </em>
     </div>
-    </div>
+     </div>
+      </div>
 <script src="script.js"></script>
 </body>
 </html>
