@@ -89,7 +89,7 @@ h5 ul {
 
 .units {
     position: relative;
-    bottom: 208px;
+    bottom: 109px;
     left: 187px;
     width: 49%;
 }
@@ -102,8 +102,8 @@ p {
 }
 
 #temperature {
-    position: relative;
-    padding-left: 27%;
+    position: absolute;
+    padding-left: 11%;
     bottom: 50px;
     font-size: 69px;
 }
@@ -118,7 +118,7 @@ p {
 #feels-like {
     position: relative;
     text-align: center;
-    bottom: 130px;
+    bottom: 33px;
     font-size: 17px;
     left: 78px;
 }
