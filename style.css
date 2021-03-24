@@ -26,7 +26,7 @@ body {
 #search-Button,
 #location-search {
   color: #ffff;
-  font-size: 13px;
+  font-size: 12px;
   background: linear-gradient(to bottom, #323232 0%, #3f3f3f 40%, #1c1c1c 150%),
     linear-gradient(
       to top,
@@ -39,9 +39,16 @@ body {
 #search-text-input,
 #search-Button,
 #location-search {
-  border-radius: 20px;
-  padding: 6px;
+  border-radius: 17px;
+  padding: 12px;
 }
+
+#locationButton{
+    flex: 0 0 auto;
+    width: 24%;
+}
+
+
 h1 {
   padding-top: 139px;
   font-size: 56px;
@@ -186,11 +193,8 @@ a {
   height: auto;
   line-height: 15px;
 }
-.col-2:hover {
-  background: grey;
-  display: block;
-  text-decoration: none;
-}
+
+
 small a {
   text-decoration: none;
   color: rgb(255, 255, 255);
