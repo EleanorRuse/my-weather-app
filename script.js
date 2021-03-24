@@ -141,36 +141,33 @@ celsiusLink.addEventListener("click", displayCelsiusTemperature);
 let selectedUnit = "C";
 
 //Forecast weather
-function displayForecast(response){
-  responseForecast = response
+function displayForecast(response) {
+  responseForecast = response;
   let forecastElement = document.querySelector("#forecast");
-
   forecastElement.innerHTML = null;
-
-  for (let index = 0; index < 6; index++){
+  for (let index = 0; index < 6; index++) {
     let forecast = response.data.list[index];
-
     let temp_max = null;
     let temp_min = null;
-
     if (selectedUnit == "C") {
       temp_max = Math.round(forecast.main.temp_max);
       temp_min = Math.round(forecast.main.temp_min);
     } else {
-      temp_max = Math.round((forecast.main.temp_max * 9)/5 +32);
-      temp_min = Math.round((forecast.main.temp_min * 9)/5 +32);
+      temp_max = Math.round((forecast.main.temp_max * 9) / 5 + 32);
+      temp_min = Math.round((forecast.main.temp_min * 9) / 5 + 32);
     }
-
-    forecastElement.innerHTML +=`
-      <div class="col-2">
+    forecastElement.innerHTML += `
+      <div class="col-12 col-sm-2">
         <h3>
           ${formatHours(forecast.dt * 1000)}
         </h3>
-        <img src="https://openweathermap.org/img/wn/${forecast.weather[0].icon}@2x.png" />
+        <img src="https://openweathermap.org/img/wn/${
+          forecast.weather[0].icon
+        }@2x.png" />
         <div class="weather-forecast-temperature">
           <strong>${temp_max}°</strong> <small>${temp_min}°</small>
         </div>
       </div>
 `;
-  } 
+  }
 }

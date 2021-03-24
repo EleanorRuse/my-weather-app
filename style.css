@@ -1,53 +1,51 @@
-body {
-background-image: url(https://images.unsplash.com/photo-1452421822248-d4c2b47f0c81?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1050&q=80) ;
-font-family: 'Questrial', sans-serif;
-min-height: 100%;
-text-align:center;
-background-size: cover;
-background-repeat: no-repeat;
-display: flex;
-position:relative;
-justify-content: center;
+html {
+  min-height: 100%;
 }
-
+body {
+  background-image: url(https://images.unsplash.com/photo-1452421822248-d4c2b47f0c81?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1050&q=80);
+  font-family: "Questrial", sans-serif;
+  min-height: 100%;
+  text-align: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  position: relative;
+  justify-content: center;
+}
 .container {
   margin-left: auto;
   margin-right: auto;
   width: auto;
-  height:100%;
-  position:relative;
-
+  height: 100%;
+  position: relative;
 }
-
 .search-form {
   padding-top: 50px;
-  width:50%;
+  width: 50%;
 }
-
 #search-Button,
 #location-search {
-  width: 101%;
-  padding-right:0;
   color: #ffff;
-  margin-right:20%;
-  font-size:13px;
-  background: linear-gradient(to bottom, #323232 0%, #3F3F3F 40%, #1C1C1C 150%), linear-gradient(to top, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.25) 200%);
+  font-size: 13px;
+  background: linear-gradient(to bottom, #323232 0%, #3f3f3f 40%, #1c1c1c 150%),
+    linear-gradient(
+      to top,
+      rgba(255, 255, 255, 0.4) 0%,
+      rgba(0, 0, 0, 0.25) 200%
+    );
   background-blend-mode: multiply;
   box-shadow: 4px 1px 3px 1px #323232;
 }
-
 #search-text-input,
 #search-Button,
 #location-search {
-    border-radius: 20px;
-    padding: 6px;
+  border-radius: 20px;
+  padding: 6px;
 }
-
 h1 {
-    padding-top: 139px;
-    font-size: 56px;
+  padding-top: 139px;
+  font-size: 56px;
 }
-
 h1,
 h5 {
   color: rgb(255, 255, 255);
@@ -55,167 +53,124 @@ h5 {
   text-align: center;
   margin-top: -26px;
 }
-
 h5 ul {
-    list-style-type: none;
-    margin-top: 14px;
-    opacity: 0.8;
-    padding-bottom: 19px;
-    font-size: 15px;
-    color: rgb(250, 250, 250);
+  list-style-type: none;
+  margin-top: 14px;
+  opacity: 0.8;
+  padding-bottom: 19px;
+  font-size: 15px;
+  color: rgb(250, 250, 250);
 }
-
 .conditionBox {
-    text-shadow: 0 3 5px rgb(12, 10, 10), 0 0 3px, #fff;
-    text-transform: capitalize;
-    left: 9%;
-    right: 211px;
-    bottom: 0px;
+  text-shadow: 0 3 5px rgb(12, 10, 10), 0 0 3px, #fff;
+  text-transform: capitalize;
 }
-
 .conditionBox ul {
-    list-style-type: none;
-    margin-top: 64px;
-    margin-bottom: -72px;
+  list-style-type: none;
+  padding: 0;
 }
-
 .mainInfo {
-    position: relative;
-    text-align: center;
-    bottom: 216px;
-    font-size: 57px;
+  position: relative;
+  text-align: center;
+  font-size: 57px;
 }
-
-
 .units {
-    position: relative;
-    bottom: 109px;
-    left: 187px;
-    width: 49%;
+  position: relative;
 }
-
 p {
-    font-size: 31px;
-    padding-top: 12px;
-    margin-bottom: 1rem;
-    margin-left: -8px;
+  font-size: 31px;
+  padding-top: 12px;
+  margin-bottom: 1rem;
+  margin-left: -8px;
 }
-
 #temperature {
-    position: absolute;
-    padding-left: 11%;
-    bottom: 50px;
-    font-size: 69px;
+  font-size: 69px;
 }
-
- a { 
-      text-decoration:none; 
-      color:#fff;
-      font-size: 22px;
- }
-
-
+a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 22px;
+}
 #feels-like {
-    position: relative;
-    text-align: center;
-    bottom: 33px;
-    font-size: 17px;
-    left: 78px;
+  position: relative;
+  text-align: center;
+  font-size: 17px;
 }
-
-
 #feel {
   position: relative;
   text-align: center;
-  font-size: 17px
-}
-
-
-.infoBox {
-    left: 7%;
-    width: 242px;
+  font-size: 17px;
 }
 
 .infoBox ul {
-    right: 2%;
-    list-style-type: none;
-    display: inline;
-    position: relative;
-    font-size: 23px;
-    bottom: 5px;
+  list-style-type: none;
+  display: inline;
+  position: relative;
+  font-size: 23px;
+  bottom: 5px;
 }
-
 #visibility {
-  padding-left: 26%;
   font-size: 23px;
 }
-
 #humidity {
-  padding-left: 27%;
   font-size: 23px;
 }
-
 #wind {
-    padding-left: 29%;
-    font-size: 23px;
-}
-
-#maxTemp {
-    padding-left: 23%;
-    font-size: 23px;
-}
-
-#minTemp {
-  padding-left: 24%;
   font-size: 23px;
 }
-
+#maxTemp {
+  font-size: 23px;
+}
+#minTemp {
+  font-size: 23px;
+}
 .conditionBox,
-.infoBox{
-  position:relative;
-  width: 199%;
+.infoBox {
+  position: relative;
   color: #ffffff;
   margin-top: 7px;
   height: 233px;
-  background: linear-gradient(to bottom, #323232 0%, #3F3F3F 40%, #1C1C1C 150%), linear-gradient(to top, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.25) 200%);
+  background: linear-gradient(to bottom, #323232 0%, #3f3f3f 40%, #1c1c1c 150%),
+    linear-gradient(
+      to top,
+      rgba(255, 255, 255, 0.4) 0%,
+      rgba(0, 0, 0, 0.25) 200%
+    );
   background-blend-mode: multiply;
   box-shadow: 6px 1px 3px 1px 323232;
   border: 1px transparent #3d3b3b;
-  border-radius: 28px; 
+  border-radius: 28px;
 }
-
 #currentEmoji {
-    position: relative;
-    bottom: 81px;
-    right: 123px;
-    width: 50%;
+  position: relative;
+  width: 100%;
 }
-
 .weather-forecast {
-    position: relative;
-    margin-top: 70px;
-    padding-bottom: 1px;
-    margin-left: -40px;
-    width: 123%;
-    color: rgb(250, 250, 250);
-    opacity:1;
-    background: linear-gradient(to bottom, #323232 0%, #3F3F3F 40%, #1C1C1C 150%), linear-gradient(to top, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.25) 200%);
-    background-blend-mode: multiply;
-    box-shadow: 6px 1px 3px 1px 323232;
-    position: relative;
-    border: 1px transparent #3d3b3b;
-    border-radius: 8px;
+  position: relative;
+  margin-top: 70px;
+  padding-bottom: 1px;
+  color: rgb(250, 250, 250);
+  opacity: 1;
+  background: linear-gradient(to bottom, #323232 0%, #3f3f3f 40%, #1c1c1c 150%),
+    linear-gradient(
+      to top,
+      rgba(255, 255, 255, 0.4) 0%,
+      rgba(0, 0, 0, 0.25) 200%
+    );
+  background-blend-mode: multiply;
+  box-shadow: 6px 1px 3px 1px 323232;
+  position: relative;
+  border: 1px transparent #3d3b3b;
+  border-radius: 8px;
 }
-
 .weather-forecast h3 {
-  font-size:23px; 
-  font-weight:400; 
-  text-align:center; 
-  height:15px; 
-  line-height: 15px; 
-  padding-top:7px; 
+  font-size: 23px;
+  font-weight: 400;
+  text-align: center;
+  height: 15px;
+  line-height: 15px;
+  padding-top: 7px;
 }
-
 .weather-forecast img {
   display: block;
   margin: 0 auto;
@@ -223,29 +178,26 @@ p {
   width: 70px;
   top: -5px;
 }
-
 .weather-forecast-temperature {
   text-align: center;
   opacity: 0.7;
-  font-size: 20px; 
+  font-size: 20px;
   font-weight: 400;
-  height:auto; 
-  line-height:15px; 
+  height: auto;
+  line-height: 15px;
 }
-
-.col-2:hover{background:grey;
-display:block; text-decoration:none;}
-
-
-small a{
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-    font-size: 18px;
-    margin-top: 50px;
+.col-2:hover {
+  background: grey;
+  display: block;
+  text-decoration: none;
 }
-
-small{
-  color:rgb(0, 0, 0);
+small a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-size: 18px;
+  margin-top: 50px;
+}
+small {
+  color: rgb(0, 0, 0);
   font-size: 18px;
 }
-
