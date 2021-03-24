@@ -44,8 +44,9 @@ body {
 }
 
 #locationButton{
-  position: relative;
-  width: 40%;
+    position: relative;
+    width: 40%;
+    left: 59%;
 }
 
 
